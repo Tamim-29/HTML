@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Practice</title>
+  <style>
+    table { margin: 10px; border-collapse: collapse; }
+    table, th, td { border: 1px solid black; padding: 6px; }
+    .bordered th, .bordered td { border: 2px solid blue; }
+    .striped tr:nth-child(even) { background: #f2f2f2; }
+    .colored th { background: #333; color: white; }
+    .rounded td, .rounded th { border-radius: 8px; border: 1px solid green; }
+    .hover tr:hover { background: yellow; }
+  </style>
+</head>
+<body>
+
+<!-- 1. Simple Table -->
+<h3>1. Simple Table</h3>
+<table>
+  <tr><th>Name</th><th>Age</th></tr>
+  <tr><td>Ali</td><td>20</td></tr>
+  <tr><td>Riya</td><td>21</td></tr>
+</table>
+
+<!-- 2. Bordered Table -->
+<h3>2. Bordered Table</h3>
+<table class="bordered">
+  <tr><th>Roll</th><th>Subject</th></tr>
+  <tr><td>101</td><td>Math</td></tr>
+  <tr><td>102</td><td>English</td></tr>
+</table>
+
+<!-- 3. Striped Table -->
+<h3>3. Striped Table</h3>
+<table class="striped">
+  <tr><th>ID</th><th>City</th></tr>
+  <tr><td>1</td><td>Dhaka</td></tr>
+  <tr><td>2</td><td>Chittagong</td></tr>
+  <tr><td>3</td><td>Khulna</td></tr>
+</table>
+
+<!-- 4. Colored Header Table -->
+<h3>4. Colored Header Table</h3>
+<table class="colored">
+  <tr><th>Product</th><th>Price</th></tr>
+  <tr><td>Pen</td><td>$2</td></tr>
+  <tr><td>Book</td><td>$5</td></tr>
+</table>
+
+<!-- 5. Rounded + Hover Table -->
+<h3>5. Rounded + Hover Table</h3>
+<table class="rounded hover">
+  <tr><th>Course</th><th>Duration</th></tr>
+  <tr><td>HTML</td><td>1 Month</td></tr>
+  <tr><td>CSS</td><td>2 Months</td></tr>
+</table>
+
+</body>
+</html>
