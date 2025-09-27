@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Task-2</title>
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 15px 25px;
+            border-radius: 20px;
+            margin: 20px auto;
+            width: fit-content;
+            font-size: 2.5em;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            color: #00eaff;
+            text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff;
+            animation: glow 2s infinite alternate;
+        }
+
+        p, ul {
+            margin: 20px auto;
+            padding: 20px;
+            width: 70%;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            color: #f1f1f1;
+            animation: fadeIn 2s ease;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        li {
+            padding: 12px;
+            background: linear-gradient(135deg, #00eaff88, #ff00ff66);
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        li:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 20px rgba(0, 234, 255, 0.8);
+            cursor: pointer;
+        }
+
+        img {
+            display: block;
+            margin: 40px auto;
+            border: 3px solid #fff;
+            box-shadow: 0 0 25px rgba(0, 234, 255, 0.7);
+            border-radius: 20px;
+            width: 250px;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .btn {
+            display: block;
+            margin: 20px auto;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #00eaff, #ff00ff);
+            border: none;
+            border-radius: 30px;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px #00eaff, 0 0 40px #ff00ff;
+        }
+
+        .box-model-demo {
+            width: 250px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 5px solid #00eaff;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(8px);
+            text-align: center;
+            color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff; }
+            to { text-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body>
+    <h1>✨ My Hobbies ✨</h1>
+    <p>I enjoy coding, reading books, and playing football. Life feels better when I’m learning something new and exploring creativity!</p>
+    <ul>
+        <li>💻 Programming</li>
+        <li>🌍 Traveling</li>
+        <li>📸 Photography</li>
+    </ul>
+    <img src="https://via.placeholder.com/250" alt="Sample Image">
+    <button class="btn">Explore More 🚀</button>
+    <div class="box-model-demo">
+        <h3>📦 CSS Box Model</h3>
+        <p>Margin → Border → Padding → Content</p>
+    </div>
+</body>
+</html>
