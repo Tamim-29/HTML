@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Order Form</title>
+  <style>
+    form {
+      width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #f0fff0;
+      border-radius: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: #4CAF50;
+    }
+    button {
+      width: 100%;
+      background: green;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: darkgreen;
+    }
+  </style>
+</head>
+<body>
+
+<form>
+  <h3>Product Order Form</h3>
+
+  Name:<br>
+  <input type="text" required><br>
+
+  Email:<br>
+  <input type="email" required><br>
+
+  Phone:<br>
+  <input type="tel" required><br>
+
+  Product:<br>
+  <select>
+    <option>Laptop</option>
+    <option>Phone</option>
+    <option>Headphones</option>
+  </select><br>
+
+  Quantity:<br>
+  <input type="number" min="1" required><br>
+
+  Address:<br>
+  <textarea rows="3"></textarea><br>
+
+  Payment:<br>
+  <input type="radio" name="pay"> Cash on Delivery
+  <input type="radio" name="pay"> Online Payment<br><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
