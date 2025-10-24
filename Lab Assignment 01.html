@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Order Form</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background: #f0f8ff;
+margin: 0;
+padding: 20px;
+}
+.form-container {
+background: #f9f9f9;
+width: 400px;
+margin: auto;
+padding: 25px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+text-align: center;
+color: #333;
+margin-bottom: 20px;
+}
+.form-group {
+margin-bottom: 15px;
+}
+label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+input, select, textarea {
+width: 100%;
+padding: 8px;
+border: 1px solid #ddd;
+border-radius: 4px;
+box-sizing: border-box;
+}
+input:focus, select:focus, textarea:focus {
+outline: none;
+border-color: #4CAF50;
+box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+.radio-group {
+display: flex;
+gap: 15px;
+}
+.radio-option {
+display: flex;
+align-items: center;
+}
+.radio-option input {
+width: auto;
+margin-right: 5px;
+}
+.submit-btn {
+background: #4CAF50;
+color: white;
+border: none;
+padding: 12px;
+width: 100%;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+margin-top: 10px;
+}
+.submit-btn:hover {
+background: #3e8e41;
+}
+</style>
+</head>
+<body>
+<div class="form-container">
+<h1>Product Order Form</h1>
+<form>
+<div class="form-group">
+<label>Customer Name</label>
+<input type="text" required>
+</div>
+<div class="form-group">
+<label>Email</label>
+<input type="email" required>
+</div>
+<div class="form-group">
+<label>Phone Number</label>
+<input type="tel" required>
+</div>
+<div class="form-group">
+<label>Product Name</label>
+<select required>
+<option value="">Select Product</option>
+<option>Laptop</option>
+<option>Smartphone</option>
+<option>Tablet</option>
+<option>Headphones</option>
+</select>
+</div>
+<div class="form-group">
+<label>Quantity</label>
+<input type="number" min="1" value="1" required>
+</div>
+<div class="form-group">
+<label>Delivery Address</label>
+<textarea rows="3" required></textarea>
+</div>
+<div class="form-group">
+<label>Payment Method</label>
+<div class="radio-group">
+<div class="radio-option">
+<input type="radio" name="payment" required>
+<label>Cash on Delivery</label>
+</div>
+<div class="radio-option">
+<input type="radio" name="payment">
+<label>Online Payment</label>
+</div>
+</div>
+</div>
+<button type="submit" class="submit-btn">Place Order</button>
+</form>
+</div>
+</body>
+</html>
