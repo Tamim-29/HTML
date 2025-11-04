@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #3498db;
+      --bg: #f9fafc;
+      --card-bg: #ffffff;
+      --text: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+      gap: 24px;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 1.05rem;
+    }
+
+    header, main, footer {
+      padding: 20px;
+      border-radius: 10px;
+      background: var(--card-bg);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      max-width: 1000px;
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      color: white;
+    }
+
+    header h2 {
+      margin: 0;
+      font-size: 1.6rem;
+      letter-spacing: 0.5px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: opacity 0.2s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .bio {
+      background-color: #eef5ff;
+      padding: 24px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .bio img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 12px;
+      object-fit: cover;
+      border: 3px solid #cce0ff;
+    }
+
+    .bio h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .projects {
+      background-color: #fffdf6;
+      padding: 24px;
+      border-radius: 10px;
+    }
+
+    .projects h3 {
+      color: var(--primary);
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+    }
+
+    .projects ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .projects li {
+      background: #f4f7fb;
+      padding: 10px 12px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      background: var(--primary);
+      color: white;
+      font-size: 1rem;
+      padding: 16px;
+      letter-spacing: 0.3px;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>My Portfolio</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bio">
+      <img src="mine.png" alt="My Photo">
+      <h3>About Me</h3>
+      <p>Hello! I'm <strong>Tamim Rahman</strong>, a web development . I enjoy building modern, responsive designs using HTML, CSS, and JavaScript, I'm a dedicated and passionate developer with a deep interest in Web Development & Networking.... A Little Awaken Turtle Who Always Tensed...!!
+
+      </p>
+    </section>
+
+    <section class="projects">
+      <h3>My Skills & Projects</h3>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Responsive Web Design</li>
+        <li>Mini Portfolio Website</li>
+        <li>To-Do App</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact me: <strong>tamimr795.com</strong> | Follow on 
+      <a href="#">Github.com/Tamim-29</a>
+    </p>
+  </footer>
+</body>
+</html>
